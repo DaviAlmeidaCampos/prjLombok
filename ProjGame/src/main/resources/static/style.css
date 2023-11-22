@@ -1,0 +1,46 @@
+body{
+    background-image:linear-gradient(to left, #2de2e6,#035ee8,#f6019d,#d40078, #9700cc);
+    font-family: 'Courier New', Courier, monospace;
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+img{
+    box-shadow: 5px 5px 5px black;
+}
+#cadastroForm, #pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1,label,h2{
+    font-size: 30px;
+    text-align: center;
+}
+button{
+    color:#9700cc;
+    background-color: cyan ;
+    width: 200px;
+
+}
+
+input{
+    width: 200px;
+    text-align: center;
+    background-color: #2de2e6;
+}
+
+
+@keyframes degrade-animado {
+    0%{
+    background-position-x: 10%;
+ }
+   100%{
+    background-position-x: 100%;
+   }
+}
